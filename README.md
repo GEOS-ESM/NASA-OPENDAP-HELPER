@@ -19,8 +19,5 @@ conda env create -f environment.yml
 ### Execution
 python main.py
 
-Options:
-  1. Show all products (faster, but some may not be available)
-  2. Validate product availability first (slower, but shows only working products)
-
-
+# From here, the script will help the user refine their download selection to only the required variables and area of interest.
+# For issues and errors contact: wesley.j.davis@nasa.gov
