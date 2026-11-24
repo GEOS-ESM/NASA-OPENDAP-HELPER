@@ -372,7 +372,7 @@ def display_dataset_info(ds):
     print_section("Dataset Structure")
     
     print("DIMENSIONS:")
-    for dim, size in ds.dims.items():
+    for dim, size in ds.sizes.items():
         print(f"  {dim:15s}: {size}")
     
     print("\nCOORDINATES:")
@@ -397,7 +397,7 @@ def display_dataset_info(ds):
     data_vars = [v for v in ds.data_vars]
     for i, var in enumerate(data_vars, 1):
         var_data = ds[var]
-        dims_str = ', '.join([f"{d}={ds.dims[d]}" for d in var_data.dims])
+        dims_str = ', '.join([f"{d}={ds.sizes[d]}" for d in var_data.sizes])
         try:
             long_name = var_data.attrs.get('long_name', 'No description')
             units = var_data.attrs.get('units', '')
