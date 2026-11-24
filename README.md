@@ -19,5 +19,5 @@ conda env create -f environment.yml
 ### Execution
 python main.py
 
-# From here, the script will help the user refine their download selection to only the required variables and area of interest.
-# For issues and errors contact: wesley.j.davis@nasa.gov
+### From here, the script will help the user refine their download selection to only the required variables and area of interest.
+#### For issues and errors contact: wesley.j.davis@nasa.gov
